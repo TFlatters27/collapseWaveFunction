@@ -27,5 +27,5 @@
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@mxcury](https://github.com/mxcury) 
-- [@mxgmn](https://github.com/mxgmn)
+- [@mxcury](https://github.com/mxcury) - Work
+- [@mxgmn](https://github.com/mxgmn) - Idea
