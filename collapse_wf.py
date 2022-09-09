@@ -1,1 +1,0 @@
-#in this project I will be making a collapse wave function algorithm to generate images/mazes based on a sample
