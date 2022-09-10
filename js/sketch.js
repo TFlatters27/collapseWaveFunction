@@ -5,10 +5,10 @@ let grid = [];
 
 const DIM = 16;
 
-const dirSize = 13;
+const dirSize = 2;
 
 function preload() {
-    const path = "res/circuit-coding-train";
+    const path = "res/mountains";
 
     for (let i = 0; i < dirSize; i++) {
         tileImages[i] = loadImage(`${path}/${i}.png`);
@@ -29,7 +29,7 @@ function setup() {
 
     //TODO: generate sockets
     //? circuit_board : dirSize = 13;
-    tiles[0] = new Tile(tileImages[0], ["AAA", "AAA", "AAA", "AAA"]);
+    /* tiles[0] = new Tile(tileImages[0], ["AAA", "AAA", "AAA", "AAA"]);
     tiles[1] = new Tile(tileImages[1], ["BBB", "BBB", "BBB", "BBB"]);
     tiles[2] = new Tile(tileImages[2], ["BBB", "BCB", "BBB", "BBB"]);
     tiles[3] = new Tile(tileImages[3], ["BBB", "BDB", "BBB", "BDB"]);
@@ -41,11 +41,11 @@ function setup() {
     tiles[9] = new Tile(tileImages[9], ["BCB", "BCB", "BBB", "BCB"]);
     tiles[10] = new Tile(tileImages[10], ["BCB", "BCB", "BCB", "BCB"]);
     tiles[11] = new Tile(tileImages[11], ["BCB", "BCB", "BBB", "BBB"]);
-    tiles[12] = new Tile(tileImages[12], ["BBB", "BCB", "BBB", "BCB"]);
+    tiles[12] = new Tile(tileImages[12], ["BBB", "BCB", "BBB", "BCB"]); */
 
     //? demo/pipes/mountains/pipes/polka/roads/train-tracks: dirSize = 2;
-    /* tiles[0] = new Tile(tileImages[0], ["AAA", "AAA", "AAA", "AAA"]);
-    tiles[1] = new Tile(tileImages[1], ["ABA", "ABA", "AAA", "ABA"]); */
+    tiles[0] = new Tile(tileImages[0], ["AAA", "AAA", "AAA", "AAA"]);
+    tiles[1] = new Tile(tileImages[1], ["ABA", "ABA", "AAA", "ABA"]);
 
     //? rail : dirSize = 7;
     /* tiles[0] = new Tile(tileImages[0], ["AAA", "AAA", "AAA", "AAA"]);
@@ -62,7 +62,8 @@ function setup() {
 
     const initialTileCount = tiles.length;
 
-    for (let i = 0; i < initialTileCount; i++) {
+    //? set i = 1 when using cwf on mountains imgs
+    for (let i = 1; i < initialTileCount; i++) {
         let tempTiles = [];
 
         for (let j = 0; j < 4; j++) {
